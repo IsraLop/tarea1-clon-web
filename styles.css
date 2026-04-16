@@ -112,15 +112,30 @@ header {
 .hero button {
   margin: 10px;
   padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero button:first-child {
   background-color: var(--color-acento);
   color: white;
   border: none;
-  cursor: pointer;
-  border-radius: 20px;
 }
 
-.hero button:hover {
+.hero button:first-child:hover {
   background-color: #005bb5;
+}
+
+.btn-outline {
+  background-color: white;
+  color: var(--color-acento);
+  border: 2px solid var(--color-acento);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-acento);
+  color: white;
 }
 
 /* FEATURES */
