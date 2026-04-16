@@ -220,6 +220,65 @@ footer {
   text-align: center;
   padding: 20px;
 }
+@media (max-width: 768px) {
+  /* NAV */
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 50px 15px;
+  }
+
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  /* BOTONES */
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero button {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  /* IMAGEN HERO */
+  .hero img {
+    max-width: 90%;
+  }
+
+  /* FEATURES */
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  /* FORMULARIO */
+  form {
+    width: 90%;
+  }
+
+  /* BUSCADOR */
+  .search input {
+    width: 80px;
+  }
+}
 
 /* 
 COMENTARIO DE CASCADA:
