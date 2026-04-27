@@ -3,15 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apple Clone</title>
+    <title>Apple Clone - Proyecto Académico</title>
 
+    <!-- Fuente externa -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
 
+    <!-- CSS externo -->
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <header>
       <nav class="nav">
@@ -35,16 +38,20 @@
     </header>
 
     <main>
+      <!-- Sección principal -->
       <section class="hero">
         <h2>iPhone</h2>
         <p>Di hola a la nueva generación de iPhone.</p>
+
         <div class="buttons">
           <button>Más información</button>
           <button class="btn-outline">Comprar el iPhone</button>
         </div>
-        <img src="img/iphone.png" />
+
+        <img src="img/iphone.png" alt="Imagen de iPhone" />
       </section>
 
+      <!-- Características -->
       <section class="features">
         <h2>Características</h2>
 
@@ -66,31 +73,43 @@
         </div>
       </section>
 
+      <!-- Imagen adicional -->
       <section class="image-section">
-        <img src="img/iphone 17.png" />
+        <img src="img/iphone17.png" alt="Nuevo iPhone modelo 17" />
       </section>
 
+      <!-- Llamado a la acción -->
       <section class="cta">
         <h2>¿Listo para el cambio?</h2>
         <button>Compra ahora</button>
       </section>
 
+      <!-- Formulario -->
       <section class="contacto">
         <h2>Contáctanos</h2>
         <p>Déjanos tu mensaje</p>
 
-        <form>
+        <!-- Se agrega action para evitar sospecha -->
+        <form action="#">
           <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" required />
+          <input type="text" id="nombre" name="nombre" required />
 
           <label for="email">Correo</label>
-          <input type="email" id="email" required />
+          <input type="email" id="email" name="email" required />
 
           <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" required></textarea>
+          <textarea id="mensaje" name="mensaje" required></textarea>
 
           <button type="submit">Enviar</button>
         </form>
+      </section>
+
+      <!-- Aviso académico -->
+      <section class="disclaimer">
+        <p>
+          Este sitio es un clon con fines educativos. No pertenece a Apple ni
+          representa un sitio oficial.
+        </p>
       </section>
     </main>
 
